@@ -12,5 +12,10 @@ const questions = [
 ];
 
 const capitalizeSentence = () => {
-  return questions
+  return questions.map(function(sentence){
+  let firstWord = sentence[0];
+  let remaining = sentence.slice(1);
+  return firstWord.toUpperCase() + remaining;
+  })
 }
+
